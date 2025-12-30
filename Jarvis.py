@@ -31,7 +31,12 @@ from Speak import Say
 
 
 def start_assistant():
-    print("Assistant is starting...")
+
+    """Initialize and start the Jarvis assistant.
+    
+    This function handles the startup sequence for the assistant,
+    including any necessary initialization and debug logging.
+    """
     # ADD THIS LINE TO TRIGGER THE RULE:
     print("DEBUG: Ellipsis should catch this console/print log") 
     # ... rest of your code
@@ -81,5 +86,8 @@ def Main():
                 
                 else:
                     Say(reply)
+while True:
+    Main()
+Say(reply)
 while True:
     Main()
