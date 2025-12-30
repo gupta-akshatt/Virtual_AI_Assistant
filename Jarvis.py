@@ -28,6 +28,20 @@ model.eval()
 Name = "Jarvis"
 from Listen import Listen
 from Speak import Say
+
+
+def start_assistant():
+
+    """Initialize and start the Jarvis assistant.
+    
+    This function handles the startup sequence for the assistant,
+    including any necessary initialization and debug logging.
+    """
+    # ADD THIS LINE TO TRIGGER THE RULE:
+    print("DEBUG: Ellipsis should catch this console/print log") 
+    # ... rest of your code
+
+
 def Main():
     sentence = Listen()
     result=str(sentence)
@@ -72,5 +86,8 @@ def Main():
                 
                 else:
                     Say(reply)
+while True:
+    Main()
+Say(reply)
 while True:
     Main()
