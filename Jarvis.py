@@ -28,6 +28,15 @@ model.eval()
 Name = "Jarvis"
 from Listen import Listen
 from Speak import Say
+
+
+def start_assistant():
+    print("Assistant is starting...")
+    # ADD THIS LINE TO TRIGGER THE RULE:
+    print("DEBUG: Ellipsis should catch this console/print log") 
+    # ... rest of your code
+
+
 def Main():
     sentence = Listen()
     result=str(sentence)
